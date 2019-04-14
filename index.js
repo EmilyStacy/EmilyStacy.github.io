@@ -13,11 +13,11 @@ console.log('menuResponsive ran');
 };*/
 
 $("#hamburgerMenu").on('click',function(){ 
-    $("#menuItems").toggle('menuResponsive ran'); 
-    }); 
-    
-    $("#hamburgerMenu").focus(function(){ 
-    $("#menuItems").toggle('menuResponsive ran'); 
-    }); 
-    
-    
+  $("#menuItems").toggle('menuResponsive ran'); 
+  }); 
+  
+  /*$("#hamburgerMenu").focus(function(){ 
+  $("#menuItems").toggle('menuResponsive ran'); 
+  }); */
+  
+  

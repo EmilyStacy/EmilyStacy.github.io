@@ -95,9 +95,6 @@ padding:5px;
   width:100%;
   transform: translate(-50%, -50%);
 }
- /*#bio,#bio2, #headerLine, #portfolioImg, #project{
-  background-color:#d1d1d1;
-}*/
 .yellow{
   background-color:#f7cd3e78;
 }
@@ -106,6 +103,9 @@ padding:5px;
 }
 .white{
  color:white;
+}
+.wheat{
+  color:#F9ECCD;
 }
 .darkGrey{
   background-color:#464647;
@@ -116,14 +116,24 @@ padding:5px;
 .lightBlue {
   background-color:#4da3de;
 }
+
+.black{
+  background-color: #4b4b4b;
+}
 .Center{
   text-align: center;
 }
 a:link{
 color:#464647;
-font-size:1.4em;
+font-size:1.1em;
 }
 
+#project2 a{
+  color:#ffffff;
+}
+#project2 a:visited {
+  color: #FAF1D6;
+}
 a:visited{
   color:black;
 }
@@ -138,7 +148,7 @@ a:hover{
 
 #img-circular{
 border: solid 1px white;
-background-clip: content-box; /* support: IE9+ */
+background-clip: content-box; 
 background-color: white;
 background-image: url('https://images.unsplash.com/photo-1504164996022-09080787b6b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80 alt="coding"' );
 width: 250px;
@@ -153,10 +163,8 @@ border-radius: 500px;
 margin: 0 auto; 
 }
 #img-circular-2{
- /*
- margin-bottom:20px;*/
 border: solid 1px white;
-background-clip: content-box; /* support: IE9+ */
+background-clip: content-box; 
 background-color: white;
 background-image: url('https://i.ibb.co/PrYkWd0/IMG-4648.jpg alt="birthdaycard"');
 width: 250px;
@@ -214,10 +222,20 @@ nav, footer{
     text-align: center;
   }
 
+  .projectFormat{
+    width:100%;
+    display:inline-block;
+    flex-basis:0%;
+    margin-top:1%;
+    padding:2%;
+    align-self:flex-start;
+    vertical-align:top;
+  }
+
 @media screen and (min-width: 1024px){
   #img-circular{
 border: solid 1px white;
-background-clip: content-box; /* support: IE9+ */
+background-clip: content-box; 
 background-color: white;
 background-image: url('https://images.unsplash.com/photo-1504164996022-09080787b6b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80 alt="coding"' );
 width: 400px;
@@ -232,11 +250,10 @@ border-radius: 500px;
 margin: 0 auto; 
 }
 #img-circular-2{
- /*
- margin-bottom:20px;*/
+ 
 border: solid 1px white;
-//padding: 5px;
-background-clip: content-box; /* support: IE9+ */
+padding: 5px;
+background-clip: content-box; 
 background-color: white;
 background-image: url('https://i.ibb.co/PrYkWd0/IMG-4648.jpg alt="birthdaycard"');
 width:400px;
@@ -279,21 +296,15 @@ margin: 0 auto;
     align-self:flex-start;
     vertical-align:top;
   }
-  #project1{
-    width:49%;
+  .projectFormat{
+    width:50%;
     display:inline-block;
     flex-basis:0%;
     margin-top:1%;
     padding:2%;
-    align-self:flex-start;
-    vertical-align:top;
+    overflow:hidden;
   }
-  /*#bio2Pic{
-    float:right;
-  }
-  #bio2Text{
-    float:left;
-  }*/
+  
 }
 @media screen and (max-width: 1023px)and (min-width: 768px){
 #img-circular{
@@ -313,10 +324,8 @@ border-radius: 500px;
 margin: 0 auto; 
 }
 #img-circular-2{
- /*
- margin-bottom:20px;*/
 border: solid 1px white;
-background-clip: content-box; /* support: IE9+ */
+background-clip: content-box; 
 background-color: white;
 background-image: url('https://i.ibb.co/PrYkWd0/IMG-4648.jpg alt="birthdaycard"');
 width:350px;
@@ -352,6 +361,22 @@ margin: 0 auto;
     display:block;
     width: 100%;
   }
+
+.projectFormat{
+  width:100%;
+  display:inline-block;
+  flex-basis:0%;
+  margin-top:1%;
+  padding:5%;
+  overflow:hidden;
+}
+
+.textFont{
+  font-family: open sans-serif;
+  font-size:1.3em;
+  padding:5px;
+}
+
 }
 
 @media screen and (max-width: 767px) {
@@ -402,5 +427,14 @@ font-size:1em;
   }
   .projectImg{
     display:block;
+  }
+  .projectFormat{
+    width:100%;
+    display:inline-block;
+    flex-basis:0%;
+    margin-top:1%;
+    padding:10%;
+    align-self:flex-start;
+    vertical-align:top;
   }
 }
